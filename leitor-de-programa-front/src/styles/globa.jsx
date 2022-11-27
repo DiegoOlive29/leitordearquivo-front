@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     :root{
     --white:#fff;
     --greytext: #626262;
-    --greytextmin: #919191;
+    --greytextmin: #c4c4c4;
     --greenButton: #31fc42d4;
     --greenHover: #19a425;
 
