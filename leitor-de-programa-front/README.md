@@ -8,7 +8,7 @@ Após o fazer o clone dos dois repositorios na sua maquina, faça os seguinte co
 
 Caso não tenha rodado o outro repositório com a api as função não vão funcionar.
 
-Techs usadas:
+Techs usadas no front:
 
     React;
     Typescript:
