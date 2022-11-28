@@ -12,10 +12,30 @@ export const TableList = styled.div`
     overflow-y      : scroll;
     min-height      : 600px;
     padding-top     : 10px;
-    gap             : 25px;
+    gap             : 5px;
     border          : 2px solid var(--greytext);
     border-radius   : 10px ;
+    
 `
+export const TableItem = styled.div`
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : space-between;
+    width           : 95%;
+    border-bottom   : 1px solid;
+    p{
+        width           : 10%;
+    }
+    
+    span{
+        width           : 20%;
+    }
+    div{
+        width           : 30%;
 
+    }
+`
+    
 
 
