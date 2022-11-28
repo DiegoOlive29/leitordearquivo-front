@@ -13,7 +13,8 @@ export interface Responsepost{
 		value: number  | undefined;
 		cpf: string  | undefined;
 		card: string  | undefined;
-		hour: string  | undefined
+		hour: string  | undefined;
+		sale: number | undefined;
 		store_owner: string  | undefined;
 		store_name: string  | undefined;
 	

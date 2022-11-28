@@ -1,5 +1,4 @@
 import { MainCenter } from "./styles";
-import { useForm } from "react-hook-form";
 import { postAnt, getAnt } from "../../service/viewsApi";
 import { useState } from "react";
 import { Responsepost } from "../..//service/viewsApi";
@@ -16,6 +15,7 @@ const CenterContainer = () => {
     let dadosResult = await postAnt(dadosPost);
     let dadosGet = await getAnt();
     console.log(dadosResult);
+    console.log(dadosGet);
     setDados(dadosGet);
   };
   return (
