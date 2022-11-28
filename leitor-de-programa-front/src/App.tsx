@@ -1,9 +1,14 @@
 import './App.css';
+import { GlobalStyle } from './styles/globa';
+import Home from './pages/home';
 
 function App() {
   return (
     <div className="App">
-      oi
+      
+      <Home/>
+      <GlobalStyle/>
+
     </div>
   );
 }
