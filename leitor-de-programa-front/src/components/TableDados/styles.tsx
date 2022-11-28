@@ -24,15 +24,19 @@ export const TableItem = styled.div`
     justify-content : space-between;
     width           : 95%;
     border-bottom   : 1px solid;
+    font-size       : 12px;
     p{
-        width           : 10%;
+        width           : 25%;
+        
+        text-align      : start
     }
     
     span{
-        width           : 20%;
+        width           : 25%;
+        text-align      : end;
     }
     div{
-        width           : 30%;
+        width           : 25%;
 
     }
 `

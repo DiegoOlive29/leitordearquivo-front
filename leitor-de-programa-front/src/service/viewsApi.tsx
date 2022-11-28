@@ -8,7 +8,7 @@ interface DataPost{
 export interface Responsepost{
     
 		id: number | undefined;
-		typeOp: string  | undefined;
+		typeOp: number  ;
 		date: string  | undefined;
 		value: number  | undefined;
 		cpf: string  | undefined;
