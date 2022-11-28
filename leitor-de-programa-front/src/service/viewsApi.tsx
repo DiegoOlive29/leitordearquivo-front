@@ -3,25 +3,25 @@ import { api } from "../utils/urls";
 
 
 interface DataPost{
-    file : File
+    FormData : FormData
 }
-interface Responsepost{
+export interface Responsepost{
     
-		id: number;
-		typeOp: string;
-		date: string;
-		value: number;
-		cpf: string;
-		card: string;
-		hour: string;
-		store_owner: string;
-		store_name: string;
+		id: number | undefined;
+		typeOp: string  | undefined;
+		date: string  | undefined;
+		value: number  | undefined;
+		cpf: string  | undefined;
+		card: string  | undefined;
+		hour: string  | undefined
+		store_owner: string  | undefined;
+		store_name: string  | undefined;
 	
 }
 
 
 
-export async function postAnt(dataAnt:DataPost): Promise<Responsepost> {
+export async function postAnt(dataAnt:any): Promise<Responsepost> {
 
     
     const {data} = await api.post('dados/',dataAnt)
@@ -30,7 +30,7 @@ export async function postAnt(dataAnt:DataPost): Promise<Responsepost> {
     return data
 
 }   
-export async function getAnt(): Promise<Responsepost> {
+export async function getAnt(): Promise<Responsepost[]> {
 
     
     const {data} = await api.get(`dados/list/`)
