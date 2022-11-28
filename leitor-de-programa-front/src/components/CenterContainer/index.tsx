@@ -1,12 +1,15 @@
 import { MainCenter } from "./styles";
 import { useForm } from "react-hook-form";
+import { postAnt, getAnt } from "../../service/viewsApi";
 
 const CenterContainer = () => {
+    
 
     const { register, handleSubmit} = useForm();
     const  handleSubmitPost = async (data:any)=> {
-      console.log(data)
-
+      let dadosGet = await getAnt()
+      console.log(dadosGet)
+      
         
     }
     return (
